@@ -13,8 +13,15 @@ int sumOfN(int n)
         return sumOfN(n - 1) + n;
     }
 }
+// Other variant
+// int sum(int n)
+// {
+//     return n * (n + 1) / 2;
+// }
 
 int main()
 {
     cout << sumOfN(7) << endl;
+    // Time Complexity  - O(n)
+    // Space Complexity - O(n)
 }
