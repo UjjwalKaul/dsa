@@ -16,5 +16,5 @@ int sumOfN(int n)
 
 int main()
 {
-    cout << sumOfN(7);
+    cout << sumOfN(7) << endl;
 }
