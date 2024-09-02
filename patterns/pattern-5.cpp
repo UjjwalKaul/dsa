@@ -1,18 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
-// Pattern-4
-// 1
-// 22
-// 333
-// 4444
-// 55555
+// Pattern-5
+// * * * * *
+// * * * *
+// * * *
+// * *
+// *
 void print(int n)
 {
     for (int i = 1; i <= n; i++)
     {
-        for (int j = 1; j <= i; j++)
+        for (int j = 0; j < n - i + 1; j++)
         {
-            cout << i;
+            cout << "* ";
         }
         cout << endl;
     }
