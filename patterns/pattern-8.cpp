@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-// Pattern-7
+// Pattern-8
 // *********
 //  *******
 //   *****
