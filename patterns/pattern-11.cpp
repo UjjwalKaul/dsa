@@ -6,6 +6,7 @@ using namespace std;
 // 1 0 1
 // 0 1 0 1
 // 1 0 1 0 1
+
 void print(int n)
 {
     int start = 1;

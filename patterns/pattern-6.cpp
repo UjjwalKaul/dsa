@@ -6,6 +6,7 @@ using namespace std;
 // 123
 // 12
 // 1
+
 void print(int n)
 {
     for (int i = 1; i <= n; i++)

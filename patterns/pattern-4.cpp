@@ -6,6 +6,7 @@ using namespace std;
 // 333
 // 4444
 // 55555
+
 void print(int n)
 {
     for (int i = 1; i <= n; i++)

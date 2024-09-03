@@ -10,6 +10,7 @@ using namespace std;
 // ***
 // **
 // *
+
 void print(int n)
 {
     for (int i = 1; i <= 2 * n - 1; i++)

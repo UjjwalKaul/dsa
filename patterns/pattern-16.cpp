@@ -6,6 +6,7 @@ using namespace std;
 // C C C
 // D D D D
 // E E E E E
+
 void print(int n)
 {
 

@@ -6,6 +6,7 @@ using namespace std;
 //     ABCBA
 //    ABCDCBA
 //   ABCDEDCBA
+
 void print(int n)
 {
     for (int i = 0; i < n; i++)
