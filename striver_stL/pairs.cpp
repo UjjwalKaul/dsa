@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 // Pairs lie in the utility library
-
 int main()
 {
     // Simple Pair
