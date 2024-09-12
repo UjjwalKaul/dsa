@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    stack<int> st;
+    stack<int> st; // Last-In-First-Out
     st.push(1);
     st.push(2);
     st.push(3);
