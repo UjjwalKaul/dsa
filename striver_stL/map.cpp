@@ -25,7 +25,8 @@ int main()
         cout << it.first << " " << it.second << endl; // Print the value of each key
     }
     auto it = mp.find(1);
-    cout << &it->second;
+    cout << &it->second; // Prints address
+    cout << it->second;  // Prints value
 
     return 0;
 }
