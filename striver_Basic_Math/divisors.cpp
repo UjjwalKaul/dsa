@@ -4,7 +4,7 @@ using namespace std;
 void divisors(int n)
 {
     vector<int> ls;
-    for (int i = 1; i <= sqrt(n); i++)
+    for (int i = 1; i * i <= n; i++) // Another way of writting i<=sqrt(n)
     {
         if (n % i == 0)
         {
