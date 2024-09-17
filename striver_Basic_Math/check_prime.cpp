@@ -26,8 +26,7 @@ void checkPrime(int n)
 }
 int main()
 {
-
-    checkPrime(5);  // 5 is a prime number
+    checkPrime(5);  // 5 is a prime number O(sqrt(n))
     checkPrime(25); // 25 is NOT a prime number
     return 0;
 }
