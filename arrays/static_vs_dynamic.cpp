@@ -17,7 +17,10 @@ int main()
     p = new int[5];                     // Create memory in heap where p points to the start of the array in C++
 
     p[0] = 5; // Accessing heap array
-
+    for (int i = 0; i < 5; i++)
+    {
+        cout << p[i] << " ";
+    }
     // Any allocated memory must be freed after use to avoid memory leak
     delete[] p; // Deallocation in C
     free(p);    // Deallocation in C++
