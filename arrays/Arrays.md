@@ -44,14 +44,20 @@ for(int i:A){
 
 # Arrray ADT
 
+## Data
+
+- Array space
+- Size
+- Length (No. of elements)
+
 ## List of Operations
 
 - Display
-- Add/Append
+- Add / Append
 - Insert to index
 - Delete from index
 - Search x
 - Set index
-- Max/Min
+- Max / Min
 - Reverse
 - Shift / Rotate
