@@ -41,3 +41,17 @@ for(int i:A){
 }
 
 ```
+
+# Arrray ADT
+
+## List of Operations
+
+- Display
+- Add/Append
+- Insert to index
+- Delete from index
+- Search x
+- Set index
+- Max/Min
+- Reverse
+- Shift / Rotate
