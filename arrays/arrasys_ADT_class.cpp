@@ -36,17 +36,32 @@ public:
     void display()
     {
         // Loop to print each element in the array
+        cout << "\nArray display\n";
         for (int i = 0; i < length; i++)
         {
             cout << A[i] << " "; // Print element at index i followed by a space
         }
     }
 
+    // Method to append an element to the array
+    void append(int element)
+    {
+        if (this->length < this->size) // Ensure there is space to add the element
+        {
+            this->A[length] = element; // Add the element at the current length position
+            this->length++;            // Increment the length
+        }
+        else
+        {
+            cout << "Array is full, cannot append element." << endl; // Handle the case when array is full
+        }
+    }
+
     // Destructor to free the dynamically allocated memory
     ~Array()
     {
-        delete[] A;                           // Deallocates the memory allocated for the array
-        cout << "\n Array destroyed" << endl; // Prints a message indicating the array has been destroyed
+        delete[] A;                          // Deallocates the memory allocated for the array
+        cout << "\nArray destroyed" << endl; // Prints a message indicating the array has been destroyed
     }
 };
 
@@ -56,6 +71,7 @@ int main()
     Array arr(10); // Create an Array object 'arr' with a size of 10
     arr.create();  // Call the create function to initialize the array with user input
     arr.display(); // Call the display function to print the array elements
-
+    arr.append(13);
+    arr.display();
     return 0; // Return 0 indicating successful execution of the program
 }
