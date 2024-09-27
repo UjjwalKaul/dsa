@@ -33,6 +33,19 @@ void Append(struct Array *arr, int element) // Pass array by pointer to modify t
     }
 }
 
+void Insert(struct Array *arr, int element, int position)
+{
+    if (position >= 0 && position <= arr->length)
+    {
+        for (int i = arr->length; i > position; i--)
+        {
+            arr->A[i] = arr->A[i - 1];
+        }
+        arr->A[position] = element;
+        arr->length++;
+    }
+}
+
 int main()
 {
     Array arr;
@@ -58,9 +71,10 @@ int main()
         scanf("%d", &arr.A[i]);
     }
 
-    Display(arr);     // Display the array before appending
-    Append(&arr, 17); // Append the element 17 to the array (by reference)
-    Display(arr);     // Display the array after appending
+    Display(arr);         // Display the array before appending
+    Append(&arr, 17);     // Append the element 17 to the array (by reference)
+    Insert(&arr, 125, 2); // 1 2 125 3 17
+    Display(arr);         // Display the array after appending
 
     free(arr.A); // Free the dynamically allocated memory
     return 0;
