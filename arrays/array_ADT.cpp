@@ -44,6 +44,10 @@ void Insert(struct Array *arr, int element, int position)
         arr->A[position] = element;
         arr->length++;
     }
+    else
+    {
+        cout << "Invalid position provided";
+    }
 }
 
 int main()
