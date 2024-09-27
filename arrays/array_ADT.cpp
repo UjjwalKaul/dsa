@@ -33,23 +33,37 @@ void Append(struct Array *arr, int element) // Pass array by pointer to modify t
     }
 }
 
-void Insert(struct Array *arr, int element, int position)
+void Insert(struct Array *arr, int element, int index)
 {
-    if (position >= 0 && position <= arr->length)
+    if (index >= 0 && index <= arr->length)
     {
-        for (int i = arr->length; i > position; i--)
+        for (int i = arr->length; i > index; i--)
         {
             arr->A[i] = arr->A[i - 1];
         }
-        arr->A[position] = element;
+        arr->A[index] = element;
         arr->length++;
     }
     else
     {
-        cout << "Invalid position provided";
+        cout << "Invalid index provided";
     }
 }
 
+int Delete(struct Array *arr, int index)
+{
+    if (index > 0 && index < arr->length)
+    {
+        int x = arr->A[index];
+        for (int i = index; i < arr->length - 1; i++)
+        {
+            arr->A[i] = arr->A[i + 1];
+        }
+        arr->length--;
+        return x;
+    }
+    return 0;
+}
 int main()
 {
     Array arr;
@@ -78,7 +92,8 @@ int main()
     Display(arr);         // Display the array before appending
     Append(&arr, 17);     // Append the element 17 to the array (by reference)
     Insert(&arr, 125, 2); // 1 2 125 3 17
-    Display(arr);         // Display the array after appending
+    cout << "Deleted " << Delete(&arr, 3) << endl;
+    Display(arr); // Display the array after appending
 
     free(arr.A); // Free the dynamically allocated memory
     return 0;
