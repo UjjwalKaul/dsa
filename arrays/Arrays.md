@@ -70,4 +70,4 @@ Transposition is the swapping an element with the previous when found to make th
 Move to Front/Head is the swapping an element with the 1st element when found to make the next search more efficient
 
 - Linear Search [O(n)]
-- Binary Search
+- Binary Search [works only on sorted lists]
