@@ -65,6 +65,9 @@ for(int i:A){
 ## Types of Search
 
 Takes an element and returns the index of an element if present in the array
+Improving Techniques:
+Transposition is the swapping an element with the previous when found to make the next search more efficient
+Move to Front/Head is the swapping an element with the 1st element when found to make the next search more efficient
 
 - Linear Search [O(n)]
 - Binary Search
