@@ -61,3 +61,10 @@ for(int i:A){
 - Max / Min
 - Reverse
 - Shift / Rotate
+
+## Types of Search
+
+Takes an element and returns the index of an element if present in the array
+
+- Linear Search [O(n)]
+- Binary Search
