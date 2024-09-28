@@ -44,5 +44,6 @@ int main()
     Array arr = {{2, 23, 14, 5, 6, 9, 8, 12}, 10, 8};
     cout << arr.LinearSearch(14) << endl; // Returns and prints 2
     cout << arr.LinearSearch(17) << endl; // Returns and prints -1
+    arr.Display();                        // Prints 14 23 2 5 6 9 8 12
     return 0;
 }
