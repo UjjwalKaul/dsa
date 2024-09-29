@@ -45,5 +45,6 @@ int main()
     cout << arr.BinarySearch(14) << endl; // Returns and prints 5
     cout << arr.BinarySearch(17) << endl; // Returns and prints -1
     arr.Display();                        // Prints 2 4 6 8 10 14 18
+    // Time takes for searching is O(log N)
     return 0;
 }
