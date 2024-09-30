@@ -57,6 +57,6 @@ int main()
     Array *arr3;
     arr3 = Merge(&arr1, &arr2);
     arr3->Display(); // 2 3 4 6 7 10 15 18 20 25
-
+    delete arr3;
     return 0;
 }
